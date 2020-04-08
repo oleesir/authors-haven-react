@@ -1,0 +1,19 @@
+{
+  "name": "authors-haven-react",
+  "version": "1.0.0",
+  "description": "online publishing platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oleesir/authors-haven-react.git"
+  },
+  "author": "olisa emodi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oleesir/authors-haven-react/issues"
+  },
+  "homepage": "https://github.com/oleesir/authors-haven-react#readme"
+}
