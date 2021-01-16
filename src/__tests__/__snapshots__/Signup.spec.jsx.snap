@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders signup form correctly 1`] = `
+<div
+  class="signup"
+>
+  <img
+    class="close"
+    src="/src/images/closed.svg"
+  />
+  <div
+    class="signupContent"
+  >
+    <div
+      class="Messages"
+    >
+      <div
+        class="leftMessage"
+      >
+        <p
+          class="leftMessageOne"
+        >
+          Share your stories
+        </p>
+        <p
+          class="leftMessageTwo"
+        >
+          Create your free Account
+        </p>
+        <p
+          class="leftMessageThree"
+        >
+          Sign into your account to serve you more personalized stories from creatives.
+        </p>
+      </div>
+    </div>
+    <div
+      class="signupForm"
+    >
+      <p
+        class="select"
+      >
+        Select one to get started
+      </p>
+      <div
+        class="social"
+      >
+        <a>
+          <img
+            class="socialIcon"
+            src="/src/images/google.svg"
+          />
+        </a>
+        <a>
+          <img
+            class="socialIcon"
+            src="/src/images/twitter.svg"
+          />
+        </a>
+        <a>
+          <img
+            class="socialIcon"
+            src="/src/images/facebook.svg"
+          />
+        </a>
+      </div>
+      
+      <form
+        class="theForm"
+        data-testid="form"
+      >
+        <div
+          class="formContent"
+        >
+          <input
+            data-testid="signupFieldFN"
+            id="firstName"
+            name="firstName"
+            placeholder="Firstname"
+            type="text"
+            value=""
+          />
+          <input
+            data-testid="signupFieldLN"
+            id="lastName"
+            name="lastName"
+            placeholder="Lastname"
+            type="text"
+            value=""
+          />
+          <input
+            data-testid="signupFieldEmail"
+            id="email"
+            name="email"
+            placeholder="Email"
+            type="email"
+            value=""
+          />
+          <input
+            data-testid="signupFieldPassword"
+            id="password"
+            name="password"
+            placeholder="Password"
+            type="password"
+            value=""
+          />
+        </div>
+        <div
+          class="signupButton"
+        >
+          <button
+            class="Button signupBtn"
+            type="submit"
+          >
+            Signup
+          </button>
+        </div>
+      </form>
+      <p
+        class="already"
+      >
+        Already have an account?
+         
+        <span>
+          Sign in
+        </span>
+      </p>
+    </div>
+  </div>
+</div>
+`;

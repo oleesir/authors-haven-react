@@ -1,0 +1,12 @@
+export const SET_MODAL = 'SET_MODAL';
+export const REMOVE_MODAL = 'REMOVE_MODAL';
+export const SIGNUP_SUCCESS = 'REGISTER_SUCCESS';
+export const SIGNUP_FAIL = 'REGISTER_FAIL';
+export const LOGIN_SUCCESS = 'LOGIN_SUCCSESS';
+export const LOGIN_FAIL = 'LOGIN_FAIL';
+export const LOGOUT = 'LOGOUT';
+export const AUTH_ERROR = 'AUTH_ERROR';
+export const AUTHENTICATING = 'AUTHENTICATING';
+export const GET_ERRORS = 'GET_ERRORS';
+export const CLEAR_ERRORS = 'CLEAR_ERRORS';
+export const USER_LOADED = 'USER_LOADED';
