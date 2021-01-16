@@ -1,10 +1,12 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import App from '../components/App';
+import App from '../App';
 
 test('renders learn react link', () => {
   const { getByText } = render(<App />);
-  const linkElement = getByText(/You just setup react with babel and eslint/i);
+  const linkElement = getByText(
+    /The one-stop shop for all the self-help ideas you need/i
+  );
   expect(linkElement).toBeInTheDocument();
 });
