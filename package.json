@@ -2,7 +2,7 @@
 	"name": "authors-haven-react",
 	"version": "1.0.0",
 	"description": "online publishing platform",
-	"main": "index.js",
+	"main": "index.jsx",
 	"scripts": {
 		"dev": " webpack-dev-server --mode development",
 		"build": "webpack --mode=production",
@@ -21,7 +21,7 @@
 	},
 	"homepage": "https://github.com/oleesir/authors-haven-react#readme",
 	"devDependencies": {
-		"@babel/cli": "^7.8.4",
+		"@babel/cli": "^7.13.0",
 		"@babel/core": "^7.9.0",
 		"@babel/plugin-transform-runtime": "^7.12.10",
 		"@babel/preset-env": "^7.9.5",
@@ -49,6 +49,9 @@
 	},
 	"dependencies": {
 		"@babel/runtime": "^7.12.5",
+		"@fortawesome/fontawesome-svg-core": "^1.2.35",
+		"@fortawesome/free-solid-svg-icons": "^5.15.3",
+		"@fortawesome/react-fontawesome": "^0.1.14",
 		"@testing-library/react": "^10.0.2",
 		"axios": "^0.21.1",
 		"babel-eslint": "^10.1.0",
@@ -57,6 +60,7 @@
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1",
 		"react-redux": "^7.2.0",
+		"react-router-dom": "^5.2.0",
 		"redux": "^4.0.5",
 		"redux-devtools-extension": "^2.13.8",
 		"redux-thunk": "^2.3.0",

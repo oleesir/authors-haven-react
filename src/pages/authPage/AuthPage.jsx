@@ -1,15 +1,25 @@
 import React, { useContext } from 'react';
 import ModalContext from '../../context/Modal/ModalContext';
-import { SIGNUP_MODAL } from '../../context/Modal/ModalType';
-import classes from './Home.module.scss';
+import { SIGNUP_MODAL, LOGIN_MODAL } from '../../context/Modal/ModalType';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import classes from './AuthPage.module.scss';
 
-const Home = () => {
+const AuthPage = () => {
 	const modalContext = useContext(ModalContext);
 	const { setModal } = modalContext;
+	const [navBar, setNavBar] = useState(false);
 
-	const openModal = () => {
+	const openSignupModal = () => {
 		setModal(SIGNUP_MODAL);
 	};
+
+	const openLoginModal = () => {
+		setModal(LOGIN_MODAL);
+	};
+
+	console.log('I will render');
+
 	return (
 		<div className={classes.HomeContainer}>
 			<div className={classes.Navbar}>
@@ -20,21 +30,20 @@ const Home = () => {
 							<span className={classes.SecondLogo}>deas.</span>
 						</div>
 					</div>
-					<div className={classes.Search}>
-						<input
-							type='text'
-							name='search'
-							placeholder='Search for articles'
-						/>
+
+					<div>
+						<FontAwesomeIcon icon={faBars} size='2x' color='orange' />
+						<a className={classes.Signup} onClick={openSignupModal}>
+							Signup
+						</a>
+						<a className={classes.Login} onClick={openLoginModal}>
+							Login
+						</a>
 					</div>
-					<a className={classes.Signup} onClick={openModal}>
-						Signup
-					</a>
-					<a className={classes.Login}>Login</a>
 				</div>
 			</div>
 
-			<div className={classes.FirstLayer}>
+			{/* <div className={classes.FirstLayer}>
 				<div className={classes.FirstLayerContent}>
 					<div className={classes.FirstLayerLeft}>
 						<p className={classes.TopInfo}>
@@ -58,9 +67,9 @@ const Home = () => {
 				<p className={classes.Curated}>
 					Curated stories based on your preference
 				</p>
-			</div>
+			</div> */}
 		</div>
 	);
 };
 
-export default Home;
+export default AuthPage;

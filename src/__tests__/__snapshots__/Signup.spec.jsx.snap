@@ -109,7 +109,7 @@ exports[`renders signup form correctly 1`] = `
           class="signupButton"
         >
           <button
-            class="Button signupBtn"
+            class="Button authBtn"
             type="submit"
           >
             Signup
@@ -119,11 +119,7 @@ exports[`renders signup form correctly 1`] = `
       <p
         class="already"
       >
-        Already have an account?
-         
-        <span>
-          Sign in
-        </span>
+        Already have an account? Login.
       </p>
     </div>
   </div>
